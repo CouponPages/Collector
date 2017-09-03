@@ -14,7 +14,7 @@
         <!--Collector-->
         <scene sceneID="u2g-mw-HuZ">
             <objects>
-                <tableViewController id="PCC-Kd-kaf" sceneMemberID="viewController">
+                <tableViewController id="PCC-Kd-kaf" customClass="ItemsTableViewController" customModule="Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eFU-Sc-1zR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

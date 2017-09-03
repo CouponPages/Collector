@@ -13,6 +13,7 @@
 		D8DB1F821F5C2401006972F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DB1F811F5C2401006972F0 /* Assets.xcassets */; };
 		D8DB1F851F5C2401006972F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DB1F831F5C2401006972F0 /* LaunchScreen.storyboard */; };
 		D8DB1F8D1F5C30E5006972F0 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB1F8C1F5C30E5006972F0 /* AddItemViewController.swift */; };
+		D8DB1F911F5C3938006972F0 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB1F901F5C3938006972F0 /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D8DB1F841F5C2401006972F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8DB1F861F5C2401006972F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D8DB1F8C1F5C30E5006972F0 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		D8DB1F901F5C3938006972F0 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +59,11 @@
 			isa = PBXGroup;
 			children = (
 				D8DB1F771F5C2401006972F0 /* AppDelegate.swift */,
+				D8DB1F901F5C3938006972F0 /* ItemsTableViewController.swift */,
 				D8DB1F8C1F5C30E5006972F0 /* AddItemViewController.swift */,
+				D8DB1F831F5C2401006972F0 /* LaunchScreen.storyboard */,
 				D8DB1F7B1F5C2401006972F0 /* Main.storyboard */,
 				D8DB1F811F5C2401006972F0 /* Assets.xcassets */,
-				D8DB1F831F5C2401006972F0 /* LaunchScreen.storyboard */,
 				D8DB1F861F5C2401006972F0 /* Info.plist */,
 				D8DB1F7E1F5C2401006972F0 /* Collector.xcdatamodeld */,
 			);
@@ -141,6 +144,7 @@
 			files = (
 				D8DB1F801F5C2401006972F0 /* Collector.xcdatamodeld in Sources */,
 				D8DB1F781F5C2401006972F0 /* AppDelegate.swift in Sources */,
+				D8DB1F911F5C3938006972F0 /* ItemsTableViewController.swift in Sources */,
 				D8DB1F8D1F5C30E5006972F0 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
