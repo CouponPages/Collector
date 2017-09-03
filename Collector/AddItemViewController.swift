@@ -9,7 +9,7 @@
 import UIKit
 
 class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var itemImageView: UIImageView!
     
@@ -20,10 +20,10 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         
         imagePicker.delegate = self
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     //
     //
     @IBAction func photosTapped(_ sender: Any) {
