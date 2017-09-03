@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D8DB1F781F5C2401006972F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB1F771F5C2401006972F0 /* AppDelegate.swift */; };
-		D8DB1F7A1F5C2401006972F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB1F791F5C2401006972F0 /* ViewController.swift */; };
 		D8DB1F7D1F5C2401006972F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DB1F7B1F5C2401006972F0 /* Main.storyboard */; };
 		D8DB1F801F5C2401006972F0 /* Collector.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8DB1F7E1F5C2401006972F0 /* Collector.xcdatamodeld */; };
 		D8DB1F821F5C2401006972F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DB1F811F5C2401006972F0 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		D8DB1F741F5C2401006972F0 /* Collector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DB1F771F5C2401006972F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8DB1F791F5C2401006972F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8DB1F7C1F5C2401006972F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8DB1F7F1F5C2401006972F0 /* Collector.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collector.xcdatamodel; sourceTree = "<group>"; };
 		D8DB1F811F5C2401006972F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				D8DB1F771F5C2401006972F0 /* AppDelegate.swift */,
-				D8DB1F791F5C2401006972F0 /* ViewController.swift */,
 				D8DB1F7B1F5C2401006972F0 /* Main.storyboard */,
 				D8DB1F811F5C2401006972F0 /* Assets.xcassets */,
 				D8DB1F831F5C2401006972F0 /* LaunchScreen.storyboard */,
@@ -140,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DB1F801F5C2401006972F0 /* Collector.xcdatamodeld in Sources */,
-				D8DB1F7A1F5C2401006972F0 /* ViewController.swift in Sources */,
 				D8DB1F781F5C2401006972F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
