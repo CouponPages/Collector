@@ -42,11 +42,25 @@ class AddItemViewController: UIViewController, UIImagePickerControllerDelegate, 
     //
     //
     @IBAction func cameraTapped(_ sender: Any) {
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
     }
     
     //
     //
     @IBAction func addTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext{
+            let item = Item(entity: Item.entity(), insertInto: context)
+            item.title = titleTextField.text
+            if let image = itemImageView.image {
+                if let imageData = UIImagePNGRepresentation(image){
+                    item.image = imageData
+                }
+            }
+            try? context.save()
+            navigationController?.popViewController(animated: true)
+        }
+        
     }
     
 }
