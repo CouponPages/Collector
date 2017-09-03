@@ -50,7 +50,7 @@
         <!--Title-->
         <scene sceneID="Y76-2r-Vi2">
             <objects>
-                <viewController id="YgU-0y-vhk" sceneMemberID="viewController">
+                <viewController id="YgU-0y-vhk" customClass="AddItemViewController" customModule="Collector" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fm0-Uh-RZE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                                 <rect key="frame" x="20" y="287.5" width="280" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addTapped:" destination="YgU-0y-vhk" eventType="touchUpInside" id="pWg-RI-OYk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,10 +92,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="gFW-L9-pdF">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="camera" id="003-a2-Ab5"/>
-                            <barButtonItem systemItem="organize" id="4Fq-BO-Yom"/>
+                            <barButtonItem systemItem="camera" id="003-a2-Ab5">
+                                <connections>
+                                    <action selector="cameraTapped:" destination="YgU-0y-vhk" id="0My-pp-owq"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="organize" id="4Fq-BO-Yom">
+                                <connections>
+                                    <action selector="photosTapped:" destination="YgU-0y-vhk" id="xxu-2I-sz9"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="itemImageView" destination="ZkP-Nu-1d5" id="ddh-jv-gTI"/>
+                        <outlet property="titleTextField" destination="srf-Fu-hdU" id="1VF-iq-9cg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FtR-YI-c2J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
