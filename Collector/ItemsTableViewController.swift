@@ -28,6 +28,7 @@ class ItemsTableViewController: UITableViewController {
                 if let coreDataItems = coreDataStuff {
                     ItemArray = coreDataItems
                     tableView.reloadData()
+                    print("Last item is:" + ItemArray[ItemArray.count-1].title!)
                 }
             }
             
@@ -48,23 +49,25 @@ class ItemsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return ItemArray.count
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        print(ItemArray.count)
+        return ItemArray.count
     }
 
-    /*
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellReuseIdentifier", for: indexPath)
 
         // Configure the cell...
-
+        let item = ItemArray[indexPath.row]
+        cell.textLabel?.text = item.title
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
