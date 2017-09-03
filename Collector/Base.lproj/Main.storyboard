@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b8u-OQ-jiJ">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,15 +16,15 @@
             <objects>
                 <tableViewController id="PCC-Kd-kaf" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eFU-Sc-1zR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vbb-nD-YJF">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vbb-nD-YJF" id="NBV-Be-d79">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -52,23 +52,23 @@
             <objects>
                 <viewController id="YgU-0y-vhk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fm0-Uh-RZE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZkP-Nu-1d5">
-                                <rect key="frame" x="50" y="84" width="275" height="275"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="device-camera-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZkP-Nu-1d5">
+                                <rect key="frame" x="20" y="84" width="280" height="155.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZkP-Nu-1d5" secondAttribute="height" multiplier="1:1" id="GSB-Ze-L15"/>
+                                    <constraint firstAttribute="width" secondItem="ZkP-Nu-1d5" secondAttribute="height" multiplier="9:5" id="GSB-Ze-L15"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="srf-Fu-hdU">
-                                <rect key="frame" x="20" y="367" width="335" height="30"/>
+                                <rect key="frame" x="20" y="247.5" width="280" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwm-UU-NhM">
-                                <rect key="frame" x="20" y="414" width="335" height="33"/>
+                                <rect key="frame" x="20" y="287.5" width="280" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Add"/>
                             </button>
@@ -77,12 +77,12 @@
                         <constraints>
                             <constraint firstItem="czB-HW-eDi" firstAttribute="trailing" secondItem="fwm-UU-NhM" secondAttribute="trailing" constant="20" id="3IB-aG-umM"/>
                             <constraint firstItem="ZkP-Nu-1d5" firstAttribute="top" secondItem="czB-HW-eDi" secondAttribute="top" constant="20" id="6Hc-m5-TA0"/>
-                            <constraint firstItem="ZkP-Nu-1d5" firstAttribute="leading" secondItem="czB-HW-eDi" secondAttribute="leading" constant="50" id="8y7-GB-yjs"/>
+                            <constraint firstAttribute="trailing" secondItem="ZkP-Nu-1d5" secondAttribute="trailing" constant="20" id="HAT-Vm-EJK"/>
+                            <constraint firstItem="fwm-UU-NhM" firstAttribute="top" secondItem="srf-Fu-hdU" secondAttribute="bottom" constant="10" id="QE8-FV-Oah"/>
                             <constraint firstItem="srf-Fu-hdU" firstAttribute="leading" secondItem="czB-HW-eDi" secondAttribute="leading" constant="20" id="RhL-su-kC0"/>
                             <constraint firstItem="srf-Fu-hdU" firstAttribute="top" secondItem="ZkP-Nu-1d5" secondAttribute="bottom" constant="8" id="epG-dM-gU1"/>
                             <constraint firstItem="czB-HW-eDi" firstAttribute="trailing" secondItem="srf-Fu-hdU" secondAttribute="trailing" constant="20" id="iaE-sr-pxR"/>
-                            <constraint firstItem="fwm-UU-NhM" firstAttribute="top" secondItem="srf-Fu-hdU" secondAttribute="bottom" constant="17" id="lm3-c2-zFZ"/>
-                            <constraint firstItem="czB-HW-eDi" firstAttribute="trailing" secondItem="ZkP-Nu-1d5" secondAttribute="trailing" constant="50" id="nsa-kj-4BL"/>
+                            <constraint firstItem="ZkP-Nu-1d5" firstAttribute="leading" secondItem="czB-HW-eDi" secondAttribute="leading" constant="20" id="mhU-J7-3ne"/>
                             <constraint firstItem="fwm-UU-NhM" firstAttribute="leading" secondItem="czB-HW-eDi" secondAttribute="leading" constant="20" id="st6-LS-2C2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="czB-HW-eDi"/>
@@ -103,7 +103,7 @@
             <objects>
                 <navigationController id="b8u-OQ-jiJ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7ZW-HB-gx8">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -115,4 +115,7 @@
             <point key="canvasLocation" x="-94" y="-369"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="device-camera-icon" width="512" height="512"/>
+    </resources>
 </document>
